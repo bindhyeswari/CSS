@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+
+
+        /* Types of combinators - basic */
+        /*
+
+        */
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 0.5em;
+        }
+
+        /* pseudo classes */
+        li:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* When there is an li hover, change the span text to uppercase */
+
+        /* Descendant Combinator */
+        li span {
+            background-color: #eee;
+        }
+
+        /* Child combiantor */
+        li > span {
+            color: darkred;
+        }
+
+        /* Adjacent Sibling combinator */
+        li:hover + li {
+            font-size: 1.5em;
+        }
+
+        /* Grouping - DRY - no relationship betweent the combinators*/
+        li.myli, li.yourli {
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <div>
+                <span>Child Combinator <strong>&gt;</strong></span>
+            </div>
+        </li>
+        <li>
+            <span>Descendant combinator <strong>space</strong></span>
+        </li>
+        <li class="myli">
+            <div>Adjacent Sibling Combinator <strong>+</strong></div>
+        </li>
+        <li class="yourli">
+            Grouping Combinator <strong>,</strong>
+        </li>
+    </ul>
+
+</body>
+</html>

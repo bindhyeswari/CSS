@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        /* Element */
+        li {
+            border: 1px solid gray;
+            padding: 0.5em;
+        }
+
+        /* Class Selector */
+        .myli {
+            background-color: darkred;
+            color: white;
+        }
+
+        /* todo: Research on partial attribute selectors */
+        /* Attribute Selector */
+        [data-custom] {
+            background-color: red;
+            color: white;
+        }
+
+        #myli {
+            background-color: darkgreen;
+            color: darkseagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Element</li>
+        <li class="myli">Class</li>
+        <li data-custom>Attribute</li>
+        <li id="myli">ID Selector</li>
+    </ul>
+</body>
+</html>

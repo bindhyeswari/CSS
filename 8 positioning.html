@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+
+        div {
+            color: white;
+        }
+
+
+        div.rectangle {
+            background-color: #ff0100;
+            height: 300px;
+            width: 50%;
+
+            margin: 4em auto;
+        }
+
+        div.square {
+            height: 100px;
+            width: 100px;
+            background-color: darkred;
+
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="rectangle">
+        <div>Some data</div>
+        <div class="square"></div>
+    </div>
+
+    <ul>
+        <li>Absolute: Positions the element wrt the nearest non-static ancestor.</li>
+    </ul>
+
+</body>
+</html>

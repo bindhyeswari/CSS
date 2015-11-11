@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+
+        strong.some-strong-class { /* 0 0 1 1 */
+            background-color: darkred;
+        }
+
+       strong { /* 0 0 0 1 */
+           background-color: red;
+           padding: 0.5em;
+           color: white;
+       }
+
+       div#mydiv > h1 span strong { /* 0 1 0 4 */
+           background-color: green;
+       }
+
+       div h1.myh1 span[data-custom] strong.some-strong-class { /* 0 0 3 4 */
+           background-color: blue;
+       }
+
+
+    </style>
+</head>
+<body>
+
+    Inline = only if you have a style attribute.
+    <br/>
+
+    Specificity is more important than cascade.
+    <br/>
+    4 numbers for each selector
+    <br/>
+    <em>Combinators DO NOT affect specificity</em>
+    <br/>
+    <span>Inline ID Class/Attribute Element</span>
+
+    <div id="mydiv">
+        <h1 class="myh1">
+        <span data-custom>
+            <strong class="some-strong-class">
+                Manali Kalaskar
+            </strong>
+        </span>
+        </h1>
+    </div>
+
+
+
+</body>
+</html>

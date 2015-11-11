@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+
+        div.container {
+            padding: 0.5em;
+            border: 1px solid gray;
+
+            /*overflow: auto;*/
+
+        }
+        div.container > div {
+            padding: 0.5em;
+            margin: 0.5em;
+            border: 1px solid gray;
+
+            float: right;
+        }
+
+        p {
+            clear: both;
+        }
+
+        /* todo: CSS3 clearfix */
+
+
+    </style>
+</head>
+<body>
+
+    <p>Collapse Issue: If the children of a container are floated, the height of the container collapses to  if no default height is provided.</p>
+
+    <h1>Solutions to the collapse issue</h1>
+    <ul>
+        <li>overflow: auto</li>
+        <li>clear approach</li>
+    </ul>
+
+    <div class="container">
+        <div>This is a block element</div>
+        <div>This is a block element</div>
+        <p></p>
+    </div>
+
+
+
+</body>
+</html>

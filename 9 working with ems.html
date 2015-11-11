@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working with ems</title>
+    <link rel="stylesheet" href="base.css"/>
+    <style>
+
+        body {
+            font-size: 16px;
+        }
+
+        div.button-regular {
+            padding: 1em; /* based on the font-size for the current element */
+            margin: 0.5em;
+            border: 1px solid #eee;
+            display: inline-block;
+            border-radius: 0.25em;
+
+            border: 0.5em solid gray;
+        }
+
+        div.button-large {
+            font-size: 1.5em; /* is based on the font-sise of the parent element */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="button-regular">
+        Regular Button
+    </div>
+
+    <div class="button-regular button-large">
+        Larger Button
+    </div>
+
+</body>
+</html>
